@@ -26,31 +26,6 @@ Timetube is an AI assistant for long-form YouTube videos. Paste a link and the a
 | Video Input  | YouTube Data API / captions / fallback audio transcription   |
 | Tooling      | Create React App, cross-env, Node 25                         |
 
-## Getting Started
-
-```bash
-git clone https://github.com/your-user/timetube.git
-cd timetube
-npm install
-
-# copy env template and add keys
-cp .env.example .env.local
-
-# start the dev server
-npm start
-```
-
-### Required environment variables
-
-```
-REACT_APP_FIREBASE_API_KEY=
-REACT_APP_FIREBASE_PROJECT_ID=
-REACT_APP_FIREBASE_APP_ID=
-REACT_APP_OPENAI_API_KEY=
-REACT_APP_YOUTUBE_API_KEY=
-```
-
-> Keep secret keys in `.env.local` (ignored by git). For CI/CD, configure them as build-time variables.
 
 ## Scripts
 
