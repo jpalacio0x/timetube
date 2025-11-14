@@ -1,0 +1,10 @@
+.timestamp {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 1rem 0;
+  text-align: center;
+}
+
