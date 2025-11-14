@@ -1,0 +1,14 @@
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+}
+
