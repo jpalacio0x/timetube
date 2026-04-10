@@ -1,0 +1,41 @@
+.page--dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.tt-dash__sub {
+  color: #9aa3b5;
+  margin-bottom: 1.5rem;
+}
+.tt-dash__form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 720px;
+}
+.tt-dash__input {
+  flex: 1;
+  padding: 0.75rem 0.9rem;
+  background: #12151c;
+  color: #e6e9f0;
+  border: 1px solid #252a35;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.tt-dash__input:focus {
+  outline: none;
+  border-color: #ff3b3f;
+}
+.tt-dash__submit { padding: 0.75rem 1.25rem; }
+.tt-dash__error {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #2b1515;
+  border: 1px solid #4a2020;
+  color: #ff9c9c;
+  border-radius: 6px;
+  max-width: 720px;
+}
+.tt-dash__hint {
+  color: #7b8596;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}

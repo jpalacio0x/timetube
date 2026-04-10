@@ -1,0 +1,8 @@
+.page--video { display: flex; flex-direction: column; gap: 1.25rem; }
+.tt-vd__player { max-width: 880px; }
+.tt-vd__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.tt-err { color: #ff9c9c; }

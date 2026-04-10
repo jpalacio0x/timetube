@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders landing page heading', () => {
+test('renders landing page hero', () => {
   render(<App />);
-  const heading = screen.getByText(/Hello Timetube/i);
-  expect(heading).toBeInTheDocument();
+  expect(
+    screen.getByText(/Turn long videos into clickable chapters/i)
+  ).toBeInTheDocument();
 });

@@ -1,0 +1,10 @@
+.tt-login { max-width: 480px; }
+.tt-login__btn { margin-top: 1rem; }
+.tt-login__err {
+  margin-top: 1rem;
+  color: #ff9c9c;
+  background: #2b1515;
+  border: 1px solid #4a2020;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+}

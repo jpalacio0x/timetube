@@ -1,0 +1,18 @@
+.tt-lib { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.tt-lib__row { background: #12151c; border: 1px solid #1f2430; border-radius: 8px; }
+.tt-lib__row:hover { border-color: #2c3446; }
+.tt-lib__link { display: block; padding: 0.9rem 1rem; color: inherit; text-decoration: none; }
+.tt-lib__title { font-weight: 600; color: #f2f4f8; }
+.tt-lib__meta { color: #8893a8; font-size: 0.85rem; display: flex; gap: 0.75rem; margin-top: 0.3rem; }
+.tt-lib__status {
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tt-lib__status--ready { background: #1d3a2a; color: #7be2a0; }
+.tt-lib__status--failed { background: #3a1d1d; color: #ff7c7c; }
+.tt-lib__status--queued,
+.tt-lib__status--transcribing,
+.tt-lib__status--summarizing { background: #23334a; color: #7cc0ff; }

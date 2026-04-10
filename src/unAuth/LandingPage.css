@@ -1,14 +1,45 @@
 .landing-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #141822 0%, #0b0d12 60%);
+  color: #e6e9f0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  padding: 2rem;
 }
-
-.landing-page h1 {
-  font-size: 3rem;
-  color: #333;
-  margin: 0;
+.lp__main {
+  max-width: 720px;
+  text-align: center;
 }
-
+.lp__title {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.lp__sub {
+  color: #9aa3b5;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.lp__cta {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.lp__btn {
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #e6e9f0;
+  border: 1px solid #2a2f3a;
+}
+.lp__btn:hover { border-color: #3a4050; color: #fff; }
+.lp__btn--primary {
+  background: #ff3b3f;
+  border-color: #ff3b3f;
+  color: #fff;
+}
+.lp__btn--primary:hover { background: #ff5457; border-color: #ff5457; }
