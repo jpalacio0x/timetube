@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Per-user jobs. Clients can read/list their own; all writes go
+    // through Cloud Functions (admin SDK bypasses rules).
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      match /jobs/{jobId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+    }
+
+    // Shared video cache. Clients may read for preview data but only
+    // functions populate it.
+    match /videos/{videoId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+  }
+}
