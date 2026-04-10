@@ -1,0 +1,59 @@
+.tt-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: #0f1115;
+  color: #f5f5f5;
+  border-bottom: 1px solid #1d2027;
+}
+.tt-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.tt-nav__logo { font-size: 1.4rem; }
+.tt-nav__links {
+  display: flex;
+  gap: 1.25rem;
+  flex: 1;
+}
+.tt-nav__links a {
+  color: #aab0bd;
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+}
+.tt-nav__links a.active {
+  color: #fff;
+  background: #1c2028;
+}
+.tt-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.tt-nav__user {
+  color: #aab0bd;
+  font-size: 0.85rem;
+}
+.tt-btn {
+  background: #ff3b3f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tt-btn:hover { background: #ff5457; }
+.tt-btn--ghost {
+  background: transparent;
+  color: #aab0bd;
+  border: 1px solid #2a2f3a;
+}
+.tt-btn--ghost:hover { color: #fff; border-color: #3a3f4a; }

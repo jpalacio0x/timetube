@@ -1,0 +1,42 @@
+.tt-bump {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: #12151c;
+  border: 1px solid #1f2430;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.tt-bump__pill {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tt-bump__pill--queued { background: #2a2f3a; color: #cdd4e3; }
+.tt-bump__pill--transcribing { background: #23334a; color: #7cc0ff; }
+.tt-bump__pill--summarizing { background: #2b2540; color: #c4a2ff; }
+.tt-bump__pill--ready { background: #1d3a2a; color: #7be2a0; }
+.tt-bump__pill--failed { background: #3a1d1d; color: #ff7c7c; }
+.tt-bump__meta { flex: 1; min-width: 0; }
+.tt-bump__title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #f2f4f8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tt-bump__channel { color: #8893a8; font-size: 0.85rem; margin-top: 0.2rem; }
+.tt-bump__hint { color: #9aa3b5; margin: 0.5rem 0 0; }
+.tt-bump__err {
+  margin-top: 0.75rem;
+  padding: 0.6rem;
+  background: #1a0f0f;
+  color: #ff9c9c;
+  border: 1px solid #3a1d1d;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  font-size: 0.8rem;
+}
